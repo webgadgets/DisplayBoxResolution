@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DISPLAY RESOLUTION</title>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="dist/display-resolution.js"></script>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                background-color: #eee;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Display box resolution</h1>
+        A small plugin that shows the size of the device
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+        <script>
+            $.wgDisplayResolution({
+                debug:true,
+                responsive: {
+                    0: {
+                        resolutionName:"xs"
+                    },
+                    576: {
+                        resolutionName:"sm"
+                    },
+                    768: {
+                        resolutionName:"md"
+                    },
+                    992: {
+                        resolutionName:"lg"
+                    },
+                    1200: {
+                        resolutionName:"xl"
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
